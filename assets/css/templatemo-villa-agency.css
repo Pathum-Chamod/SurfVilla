@@ -1384,6 +1384,7 @@ Page Header Style
 }
 
 .page-heading span {
+  visibility: hidden;
   background-color: #fff;
   color: #1e1e1e;
   font-size: 14px;
