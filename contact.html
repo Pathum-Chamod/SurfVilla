@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="assets/css/owl.css">
     <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    
 <!--
 
 TemplateMo 591 villa agency
@@ -29,6 +30,17 @@ https://templatemo.com/tm-591-villa-agency
   </head>
 
 <body>
+
+  <div style="position: fixed; top: 10px; right: 10px; z-index: 1000;">
+    <label class="switch">
+      <input type="checkbox" id="languageSwitch" onclick="toggleLanguage()">
+      <span class="slider round"></span>
+    </label>
+    <span id="language-label" style="margin-left: 10px; font-weight: bold;">JP</span>
+  </div>
+  
+  
+
 
   <!-- ***** Preloader Start ***** -->
   <div id="js-preloader" class="js-preloader">
@@ -55,8 +67,6 @@ https://templatemo.com/tm-591-villa-agency
         <div class="col-lg-4 col-md-4">
           <ul class="social-links">
             <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-            <li><a href="https://x.com/minthu" target="_blank"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
             <li><a href="#"><i class="fab fa-instagram"></i></a></li>
           </ul>
         </div>
@@ -112,24 +122,21 @@ https://templatemo.com/tm-591-villa-agency
           <div class="section-heading">
             <h6>| Contact Us</h6>
             <h2>Get In Touch With Us</h2>
-          </div>
+         
           <p>Dreaming of a luxurious escape and thrilling surf adventures? Contact us at <b> SURF VILLA - HIKKADUWA </b> to book your unforgettable stay.
-            Whether you're seeking relaxation on pristine beaches, exploring the local culture, or catching the perfect wave, our experienced team is here to assist you.<br> <b> We offer a range of services, including: </b> <br>
+            Whether you're seeking relaxation on pristine beaches, exploring the local culture, or catching the perfect wave, our experienced team is here to assist you.<br> <b> We offer a range of services, including: </b> <br> <br>
   
     <strong> <span style="font-size: 16px;"> >Luxury Villa Rentals:</span> </strong> Experience the epitome of comfort and style in our stunning villas. <br>
     <strong> <span style="font-size: 16px;"> >Surfing Tours:</span> </strong> Guided surf excursions with expert instructors, catering to all skill levels.<br>
     <strong> <span style="font-size: 16px;"> >Personalized Concierge Services:</span> </strong> Let us arrange transportation, tours, and other activities to enhance your stay.
-  
 </p>
-
-
-          </p>
+</div>
           <div class="row">
             <div class="col-lg-12">
               <div class="item phone">
                 <a href="https://wa.me/+94777147864">
-                <img src="assets/images/phone-icon2.png" alt="" style="max-width: 52px;" >
-              </a>
+                  <img src="assets/images/phone-icon2.png" alt="" style="max-width: 52px; transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.2)'" onmouseout="this.style.transform='scale(1)'">
+                </a>
                 <h6><br><br><br>+94 77 714 7864<br><span>Phone Number</span></h6>
               </div>
             </div>
@@ -190,7 +197,19 @@ https://templatemo.com/tm-591-villa-agency
       <div class="col-lg-12">
         <p>Copyright © 2025 Surf Villa All rights reserved.
         
-          Developed by: <a rel="nofollow" href=https://www.linkedin.com/in/pathum-chamod-48a528259/" target="_blank">Pathum_Chamod</a></p>
+          Developed by: <a rel="nofollow noopener" href="https://www.linkedin.com/in/pathum-chamod-48a528259/" target="_blank"
+          style="
+            font-family: 'Poppins', sans-serif; 
+            font-weight: 700; 
+            color: #f35525; 
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); 
+            letter-spacing: 1px;
+          ">
+         Pathum_Chamod
+       </a>
+
+
+
       </div>
     </div>
   </footer>
@@ -203,6 +222,7 @@ https://templatemo.com/tm-591-villa-agency
   <script src="assets/js/owl-carousel.js"></script>
   <script src="assets/js/counter.js"></script>
   <script src="assets/js/custom.js"></script>
+
 
   </body>
 </html>
