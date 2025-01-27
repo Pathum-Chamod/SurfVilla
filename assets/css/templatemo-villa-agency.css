@@ -1,10 +1,4 @@
-/*
 
-TemplateMo 591 villa agency
-
-https://templatemo.com/tm-591-villa-agency
-
-*/
 
 /* ---------------------------------------------
 Table of contents
@@ -25,7 +19,7 @@ Table of contents
 font & reset css
 --------------------------------------------- 
 */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 /* 
 ---------------------------------------------
 reset
@@ -882,15 +876,16 @@ Featured Style
   width: 70%;
 }
 
+
 .featured .accordion {
   margin-left: 10px;
   margin-right: 10px;
-  --bs-accordion-border-radius: 10px;
-  --bs-accordion-inner-border-radius: 10px;
-  --bs-accordion-bg: #fafafa;
-  --bs-accordion-border-color: none;
+  border-radius: var(--bs-accordion-border-radius);
+  background-color: var(--bs-accordion-bg);
+  border-color: var(--bs-accordion-border-color);
   border: none !important;
 }
+
 
 .featured .accordion-header {
   border-bottom: 1px solid #eaeaea;
@@ -1831,62 +1826,5 @@ body {
   .contact-page .section-heading {
     margin-right: 100px;
   }
-}
-
-/* newcss i added */
-
-.switch {
-  position: relative;
-  display: inline-block;
-  width: 50px;
-  height: 24px;
-}
-
-.switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ccc;
-  transition: 0.4s;
-  border-radius: 24px;
-}
-
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 20px;
-  width: 20px;
-  left: 2px;
-  bottom: 2px;
-  background-color: white;
-  transition: 0.4s;
-  border-radius: 50%;
-}
-
-input:checked + .slider {
-  background-color: #398245;
-}
-
-input:checked + .slider:before {
-  transform: translateX(26px);
-}
-
-#language-label {
-  font-size: 16px;
-  color: black;
-  transition: color 0.3s ease;
-}
-
-#language-label.active {
-  color: rgb(0, 0, 0);
 }
 

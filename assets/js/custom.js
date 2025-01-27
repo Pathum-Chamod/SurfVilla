@@ -64,9 +64,7 @@
 		  rdn_events_list.arrange({
 			filter: filterValue,
 		  });
-		  filtersElem
-			.querySelector(".is_active")
-			.classList.remove("is_active");
+		  filtersElem.querySelector(".is_active").classList.remove("is_active");
 		  event.target.classList.add("is_active");
 		  event.preventDefault();
 		});
@@ -89,9 +87,7 @@
 		location.hostname == this.hostname
 	  ) {
 		var target = $(this.hash);
-		target = target.length
-		  ? target
-		  : $("[name=" + this.hash.slice(1) + "]");
+		target = target.length ? target : $("[name=" + this.hash.slice(1) + "]");
 		if (target.length) {
 		  var width = $(window).width();
 		  if (width < 991) {
@@ -219,13 +215,13 @@
   
 	  // Update the language label dynamically
 	  const languageLabel = document.getElementById("language-label");
-  if (isJapanese) {
-    languageLabel.innerText = "EN"; // Show "EN" when toggled on.
-    languageLabel.style.color = "black";
-  } else {
-    languageLabel.innerText = "JP"; // Show "JP" when toggled off.
-    languageLabel.style.color = "black";
-  }
+	  if (isJapanese) {
+		languageLabel.innerText = "EN";
+		languageLabel.classList.add("active");
+	  } else {
+		languageLabel.innerText = "JP";
+		languageLabel.classList.remove("active");
+	  }
 	}
   
 	// Attach the language toggle function to the global window object
