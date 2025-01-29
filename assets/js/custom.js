@@ -140,7 +140,6 @@
 		  <strong>>Personalized Concierge Services:</strong> Let us arrange transportation, tours, and other activities to enhance your stay.`,
 		  phoneLabel: "Phone Number",
 		  emailLabel: "Business Email",
-		  footerText: "Developed by: Pathum_Chamod",
 		  form: {
 			fullName: "Full Name",
 			fullNamePlaceholder: "Your Name...",
@@ -163,7 +162,6 @@
 		  <strong>>パーソナライズドコンシェルジュサービス:</strong> 交通機関、ツアー、その他のアクティビティの手配をお任せください。`,
 		  phoneLabel: "電話番号",
 		  emailLabel: "ビジネスメール",
-		  footerText: "開発者: Pathum_Chamod",
 		  form: {
 			fullName: "氏名",
 			fullNamePlaceholder: "お名前...",
@@ -181,7 +179,7 @@
 	  const isJapanese = document.getElementById("languageSwitch").checked;
 	  const lang = isJapanese ? "ja" : "en";
   
-	  // Update text dynamically
+	  // Update text dynamically for headings and form fields
 	  document.querySelector("h3").innerText = translations[lang].heading;
 	  document.querySelector(".section-heading h2").innerText =
 		translations[lang].subheading;
@@ -191,7 +189,6 @@
 		translations[lang].phoneLabel;
 	  document.querySelector(".email h6 span").innerText =
 		translations[lang].emailLabel;
-	  document.querySelector("footer p").innerHTML = `Copyright © 2025 Surf Villa All rights reserved.<br>${translations[lang].footerText}`;
   
 	  // Update form labels and placeholders
 	  document.querySelector("label[for='name']").innerText =
