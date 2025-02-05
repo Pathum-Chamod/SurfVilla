@@ -744,15 +744,15 @@ Banner Style
 }
 
 .main-banner .item-1 {
-  background-image: url(../images/banner-01.jpg);
+  background-image: url(../images/villa1.jpeg);
 }
 
 .main-banner .item-2 {
-  background-image: url(../images/banner-02.jpg);
+  background-image: url(../images/villa2.jpeg);
 }
 
 .main-banner .item-3 {
-  background-image: url(../images/banner-03.jpg);
+  background-image: url(../images/villa3.jpeg);
 }
 
 .main-banner .item span.category {
@@ -814,10 +814,10 @@ Banner Style
   line-height: 50px;
   font-size: 24px;
   display: inline-block;
-  color: #fff;
-  background-color: rgba(255, 255, 255, 0.2);
+  color: #000000;
+  background-color: rgb(255, 255, 255);
   border-radius: 50%;
-  opacity: 1;
+  opacity: 100;
   transition: all .3s;
 }
 
@@ -833,7 +833,7 @@ Banner Style
 
 .main-banner .owl-nav .owl-prev i:hover,
 .main-banner .owl-nav .owl-next i:hover {
-  opacity: 1;
+  opacity: 100;
   background-color: rgba(255, 255, 255, 0.5);
 }
 
